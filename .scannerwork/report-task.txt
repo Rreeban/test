@@ -1,0 +1,6 @@
+projectKey=cle_test
+serverUrl=http://localhost:9000
+serverVersion=6.7.4.38452
+dashboardUrl=http://localhost:9000/dashboard/index/cle_test
+ceTaskId=AWYWBAAtU26F6Yvv8RU9
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWYWBAAtU26F6Yvv8RU9
