@@ -1,23 +1,23 @@
 pipeline {
-
+  
   agent {
     label 'Linux'
   }
   
   stages {
     
-    stage('Test') {
+    stage('Test & Publication') {
       
       steps {
         sh 'mvn test'  
       }
       
-    }
-      
-    stage('Publication') {
+      post {
         
-      steps {
-        junit 'target/surefire-reports/*.xml'
+        always {
+          junit 'target/surefire-reports/*.xml'
+        }
+        
       }
       
     }
